@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT" crossorigin="anonymous">
+    <script defer src="js/addbooks.js"></script>
+    <title>eLibrary</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">The eLibrary</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="virtualtour.html">Virtual Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">Books</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <p>Welcome Guest</p>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <form>
+            <div>
+                <h3>New Book Form</h3>
+                <p>*recquired</p>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputBook">* Book Title</label>
+                    <input type="text" class="form-control" id="inputBook" placeholder="enter book title" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputISBN">* ISBN</label>
+                    <input type="text" class="form-control" id="inputISBN" placeholder="enter book ISBN" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputFee">*Over due Fee</label>
+                    <input type="number" class="form-control" id="inputFee" placeholder="enter fee">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPublisher">*Publisher</label>
+                    <input type="text" class="form-control" id="inputPublisher" placeholder="enter publisher" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputDate">*Date Published</label>
+                    <input type="date" class="form-control" id="inputDate" placeholder="enterdate" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class=col></div>
+                <div class=col></div>
+                <div class=col>
+                    <input id="postBook" type="button" class="btn btn-primary" value="Add Book">
+                    <input type="reset" class="btn btn-primary" value="reset">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
